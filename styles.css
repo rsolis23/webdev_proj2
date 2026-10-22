@@ -1,55 +1,168 @@
-
-/* overall page appearance */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #1e252b;
-  color: #f2f4f5;
-  line-height: 1.6;
-  margin: 0 auto;
-  padding: 2rem;
-  max-width: 900px;
-}
-
-/* the main headings */
-h1 {
-  color: #79d6c5;
-  text-align: center;
-}
-
-/* section heading */
-h2 {
-  color: #79d6c5;
-  border-bottom: 1px solid #52666b;
-  padding-bottom: 0.4rem;
-}
-
-/* navigation */
+/* shared navigation style */
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 2rem;
   padding: 0;
+  margin: 1rem 0 2rem;
 }
 
-/* navigation links */
+/* shared navigation links */
 nav a {
-  color: #79d6c5;
+  color: #FF8FC7;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* links hovered */
 nav a:hover {
-  color: #ffffff;
+  color: #FFD6E9;
   text-decoration: underline;
 }
 
-/* img and video */
+/* shared img and video style */
 img,
 video {
+  display: block;
   max-width: 100%;
   height: auto;
-  display: block;
   margin: 1.5rem auto;
+}
+
+/* shared heading style */
+h1,
+h2 {
+  color: #FF8FC7;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  border-bottom: 1px solid #75445F;
+  padding-bottom: 0.4rem;
+}
+
+/* shared link style */
+a {
+  color: #FF8FC7;
+}
+
+a:hover {
+  color: #FFD6E9;
+}
+
+/* shared page appearance */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #241923;
+  color: #FFF5FA;
+  line-height: 1.6;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* home page */
+
+/* Fluid page width */
+body.page-home {
+  width: 90%;
+  max-width: 68rem;
+}
+
+/* home page title */
+body.page-home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* home page section headings */
+body.page-home h2 {
+  font-size: 1.8rem;
+  margin-top: 1.8rem;
+}
+
+/* home page paragraphs */
+body.page-home p {
+  font-size: 1.1rem;
+}
+
+/* home page images */
+body.page-home img {
+  width: 25rem;
+  border: 2px solid #75445F;
+  border-radius: 0.5rem;
+}
+
+/* resume page */
+
+/*fixedwidth resume layout */
+body.page-resume {
+  width: 900px;
+  max-width: none;
+  margin: 0 auto;
+}
+
+/* resume title */
+body.page-resume h1 {
+  font-size: 2.2rem;
+  border-bottom: 2px solid #FF8FC7;
+  padding-bottom: 1rem;
+}
+
+/* resume section headings */
+body.page-resume h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* resume job and education headings */
+body.page-resume h3 {
+  color: #FFD6E9;
+  margin-bottom: 0.2rem;
+}
+
+/* resume lists */
+body.page-resume li {
+  margin-bottom: 0.4rem;
+}
+
+/* game design page */
+
+/* fluid game design layout */
+body.page-game-design {
+  width: 90%;
+  max-width: 68rem;
+}
+
+/* game design main heading */
+body.page-game-design h1 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+/* game design section headings */
+body.page-game-design h2 {
+  font-size: 1.7rem;
+  margin-top: 1.8rem;
+}
+
+/* game design paragraphs */
+body.page-game-design p {
+  font-size: 1.1rem;
+}
+
+/* game design video */
+body.page-game-design video {
+  width: 35rem;
+  border: 2px solid #75445F;
+  border-radius: 0.5rem;
+}
+
+/* game design images */
+body.page-game-design img {
+  width: 25rem;
+  border: 2px solid #75445F;
+  border-radius: 0.5rem;
 }
